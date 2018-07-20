@@ -69,7 +69,7 @@ export default compose(
 )(App);
 ```
 
-**NOTE**: To ensure the values passed override any assigned by other composed decorators, place `statics` last to executë in the composition chain.
+**NOTE**: To ensure the values passed override any assigned by other composed decorators, place `statics` last to execute in the composition chain.
 
 ## Development
 
