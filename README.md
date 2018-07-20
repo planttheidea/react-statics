@@ -4,6 +4,12 @@ Decorate React components with static properties
 
 ## Table of contents
 
+- [Summary](#summary)
+- [Usage](#usage)
+  - [Standard](#standard)
+  - [Composed](#composed)
+- [Development](#development)
+
 ## Summary
 
 When working with stateless functional components, or overriding default values on decorated components, applying statics can feel a bit boilerplate-y. This decorator centralizes the static property assignment, and allows for easy decorated composition.
