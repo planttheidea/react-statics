@@ -1,5 +1,8 @@
 // utils
-import {throws} from './utils';
+import {
+  isPlainObject,
+  throws
+} from './utils';
 
 /**
  * @function statics
@@ -11,7 +14,7 @@ import {throws} from './utils';
  * @returns {function(function): function} the method that decorates the component with the static properties
  */
 const statics = (staticProperties) =>
-  typeof staticProperties === 'object'
+  isPlainObject(staticProperties)
     ? (Component) =>
       typeof Component === 'function'
         ? Object.keys(staticProperties).reduce((EnhancedComponent, property) => {
