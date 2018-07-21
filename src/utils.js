@@ -1,4 +1,15 @@
 /**
+ * @function isPlainObject
+ *
+ * @description
+ * is the value passed a plain object
+ *
+ * @param {any} value the value to test
+ * @returns {boolean} is the value a plain object
+ */
+export const isPlainObject = (value) => typeof value === 'object' && !!value && value.constructor === Object;
+
+/**
  * @function throws
  *
  * @description
